@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converters</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="#length">Length</a>
+        <a href="#weight">Weight</a>
+        <a href="#time">Time</a>
+    </div>
+
+    <h1>Unit Converters</h1>
+    <p>Convert the most used units with the Unit Converters.</p>
+
+    <div class="super-container">
+        <div class="container" id="length">
+            <h2>Length Converter</h2>
+            <div class="converter">
+                <input type="text" name="input" id="inputL" class="item" placeholder="Input">
+                <input type="text" name="output" id="outputL" class="item" placeholder="Output">
+                <select name="inputType" id="inputTypeL" class="item">
+                    <option value="m">Meters</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="km">Kilometeres</option>
+                </select>
+                <select name="outputType" id="outputTypeL" class="item">
+                    <option value="m">Meters</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="km">Kilometers</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container" id="weight">
+            <h2>Weight Converter</h2>
+            <div class="converter">
+                <input type="text" name="input" id="inputW" class="item" placeholder="Input">
+                <input type="text" name="output" id="outputW" class="item" placeholder="Output">
+                <select name="inputType" id="inputTypeW" class="item">
+                    <option value="kg">Kilograms</option>
+                    <option value="g">Grams</option>
+                </select>
+                <select name="outputType" id="outputTypeW" class="item">
+                    <option value="kg">Kilograms</option>
+                    <option value="g">Grams</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container" id="time">
+            <h2>Time Converter</h2>
+            <div class="converter">
+                <input type="text" name="input" id="inputT" class="item" placeholder="Input">
+                <input type="text" name="output" id="outputT" class="item" placeholder="Output">
+                <select name="inputType" id="inputTypeT" class="item">
+                    <option value="s">Seconds</option>
+                    <option value="ms">Milliseconds</option>
+                    <option value="min">Minutes</option>
+                    <option value="hr">Hours</option>
+                    <option value="d">Days</option>
+                </select>
+                <select name="outputType" id="outputTypeT" class="item">
+                    <option value="s">Seconds</option>
+                    <option value="ms">Milliseconds</option>
+                    <option value="min">Minutes</option>
+                    <option value="hr">Hours</option>
+                    <option value="d">Days</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="length.js"></script>
+    <script src="weight.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>
